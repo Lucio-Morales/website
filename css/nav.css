@@ -1,0 +1,139 @@
+.topheader {
+    position:fixed;
+    box-shadow: 0 4px 6px var(--navbar-shallow-color);
+    background-color: var(--theme-color);
+    left:0;
+    top:0;
+    width: 100vw;
+    z-index:100;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* LOGO  */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+/* MENU  */
+.menu {
+    display:flex;
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 0 15px;
+}
+
+.menu a{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after {
+    content:"";
+    background-color: var(--primary-color);
+    position:absolute;
+    left:0;
+    top: calc(100% + 4px);
+    width:100%;
+    height:2px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu a.selected::after,
+.menu a:hover::after {
+    opacity: 0.8;
+}
+
+.menu a:hover {
+    color: silver;
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 780px) {
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left:0;
+        top:0;
+        width: 100%;
+        align-items: center;
+        background-color: var(--navbar-shallow-color);
+        height: 100%;
+        overflow-y: auto;
+
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+    
+    .menu li {
+        padding: 0;
+    }
+    
+    .menu a{
+        color: var(--text-color);
+        line-height: 80px;
+        font-size: 25px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .close-menu {
+         align-self: flex-end;
+         padding: 12px 16px;
+    }
+
+    .menu_opened {
+        opacity:1;
+        pointer-events: all;
+    }
+
+    .open-menu:focus:not(:focus-visible),
+    .close-menu:focus:not(:focus-visible) {
+        outline:none;
+    }
+
+    .menu a::after {
+        content:none;
+        
+    }
+    
+    .menu a:hover,
+    .menu a.selected {
+        color: tomato;
+    }
+}

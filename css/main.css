@@ -1,0 +1,52 @@
+:root {
+    --theme-color: black;
+    --primary-color: tomato;
+    --secondary-color: pink;
+    --text-color-inverse: black;
+    --text-color: whitesmoke;
+    --navbar-shallow-color: rgb(18, 18, 18);
+    --menu-mobile-background-color: #ccc;
+}
+
+section[id]{
+    scroll-margin-top: 90px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--theme-color);
+    color:var(--text-color);
+    padding-top:80px;
+}
+
+a {
+    text-decoration: none;
+    color:var(--text-color)
+}
+
+.horizontal-padding{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.vertical-padding{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+
+@media (min-width: 780px) {
+    .horizontal-padding{
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    
+    .vertical-padding{
+        padding-top:75px;
+        padding-bottom: 75px;
+    }
+}
