@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/profile.css" />
-    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/projects.css" />
     <script defer src="js/app.js"></script>
   </head>
   <body>
@@ -29,13 +30,13 @@
           <img
             height="50"
             width="50"
-            src="./icons/img/foto-de-perfil.png"
+            src="./icons/img/logo.jpeg"
             alt="imagen del autor"
           />
-          <div>
+          <!-- <div>
             Lucio Morales <br />
             { code }
-          </div>
+          </div> -->
         </a>
         <button class="open-menu" aria-label="Abrir menú">
           <img src="./icons/svg/burger-menu.svg" alt="abrir menú" />
@@ -49,9 +50,9 @@
               alt="cerrar menú"
             />
           </button>
-          <li><a href="#profile" class="selected">Perfil</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#profile" class="selected">Inicio</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#about">Sobre mi</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
@@ -62,15 +63,16 @@
       <section class="profile" id="profile">
         <div class="profile-info">
           <h1 class="profile-title">
-            Hola! Soy <br />
-            Lucio Morales
+            <span class="name-span">L</span>ucio
+            <span class="name-span">M</span>orales
           </h1>
           <p class="profile-details">
-            asdasdasdasdasda asda asd asd asd asdasdasdasd asdasdasdasdasda asda
-            asd asd asd asdasdasdasdasdasdasdasdasda asda asd asd asd
-            asdasdasdasd
+            Desarrollador web <span>Frontend</span> con React. <br />
+            Cuento conocimientos en tecnologías de <span>Backend</span>.
+            Desarrollo soluciones completas y robustas que conectan
+            eficientemente el frontend con la lógica del servidor.
           </p>
-          <button class="profile-btn">Descargar CV</button>
+          <a href="#projects" class="profile-btn">Ver proyectos</a>
         </div>
 
         <div class="profile-img-section">
@@ -87,89 +89,230 @@
     <!-- PROJECTS SECTION  -->
     <div class="horizontal-padding vertical-padding">
       <section class="projects" id="projects">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-        blanditiis error molestias, corporis, dolores neque excepturi totam qui
-        odit beatae accusamus cumque aut nulla vel. Exercitationem sapiente
-        perferendis hic! Labore ullam unde vero iste perspiciatis enim optio
-        recusandae eaque repudiandae dolorem quia ut ducimus doloribus cum quasi
-        eum nobis, rem sit omnis repellat? Porro et, iure maiores quas corporis
-        deleniti maxime ratione numquam provident natus autem? Quibusdam non
-        quam voluptas ut omnis dignissimos eaque quisquam repellat aliquam
-        repellendus quo rem incidunt ipsam adipisci, corporis nam deserunt vel
-        sint accusantium? Ullam, rerum, voluptatibus adipisci possimus ea
-        incidunt voluptatum quod, accusamus quis eveniet molestiae perspiciatis
-        odit. Nisi quod commodi delectus cupiditate ullam id quidem obcaecati ab
-        expedita placeat minima ad sit quibusdam blanditiis ea incidunt vel
-        dolorum nostrum soluta tempore laborum, maxime voluptatum a? Ipsa nulla
-        pariatur ipsam impedit, voluptas totam quo sint, neque exercitationem
-        sequi ullam velit. Maxime mollitia illum debitis, distinctio amet
-        perspiciatis vitae porro atque temporibus iusto alias quam ea cupiditate
-        eum soluta, eligendi quo vero provident magni. Fuga ex accusamus esse
-        impedit nulla perspiciatis doloremque veritatis quo laboriosam neque
-        voluptate fugit harum minus reprehenderit cumque in, maiores nobis nemo
-        quam architecto eligendi suscipit quas minima? Repellat, a mollitia
-        asperiores explicabo quaerat at! Iste voluptates ea adipisci tempore
-        molestias rem sunt consequuntur voluptatum autem voluptate, explicabo
-        quam. Maxime cum cupiditate, asperiores ea, quasi repellat culpa
-        perspiciatis optio facilis illo hic autem voluptatem placeat mollitia
-        quam totam rerum iusto incidunt dignissimos nemo sequi ipsa debitis
-        cumque. Officia, id officiis nisi iure reiciendis maiores eligendi iste
-        doloribus magnam ex deserunt nobis odio, magni accusamus, in cum? Itaque
-        exercitationem ratione earum officia maxime quasi possimus ipsa sed ea
-        non atque veniam, consequuntur officiis doloribus? Ratione placeat
-        consectetur nesciunt mollitia, unde veritatis voluptates eius itaque
-        velit odit enim iste officia ipsa repellendus hic reprehenderit labore
-        aut tempore perferendis minima, et repellat nemo voluptatum! Impedit
-        molestias voluptas quos. Quod cupiditate nulla fugiat repudiandae quia
-        maiores fugit quo corrupti, quibusdam vel iure doloribus soluta itaque
-        consectetur, dolores quasi dicta exercitationem, voluptatum similique
-        natus blanditiis molestias! Fugit cumque aperiam error quis
-        exercitationem dolor ratione aliquid quam hic praesentium ut et, minus
-        inventore.
+        <h2 class="projects-title">Projects</h2>
+        <div class="projects-container">
+          <!-- project1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="icons/img/demo.jpg" alt="" />
+            </div>
+            <h3 class="card-title">Tumblx</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              voluptates laudantium eius sunt! Sint quas exercitationem,
+              excepturi libero dolor quod architecto error perferendis aut
+              soluta porro nesciunt molestias a repellendus.
+            </p>
+            <div class="project-tech">
+              <img
+                src="/icons/svg/tech-icons/react-icon.svg"
+                alt="React icon"
+              />
+              <img src="/icons/svg/tech-icons/node-icon.svg" alt="Node icon" />
+              <img
+                src="/icons/svg/tech-icons/typescript-icon.svg"
+                alt="Typescript icon"
+              />
+              <img src="/icons/svg/tech-icons/html-icon.svg" alt="Html icon" />
+              <img src="/icons/svg/tech-icons/css-icon.svg" alt="Css icon" />
+            </div>
+            <div class="link-section">
+              <a href="#">
+                <img
+                  src="/icons/svg/tech-icons/github-white-icon.svg"
+                  alt="Github icon"
+                  class="icon"
+                />
+                Github
+              </a>
+              <a href="#">
+                <img
+                  src="/icons/svg/tech-icons/web-globe-icon.svg"
+                  alt="Deploy icon"
+                  class="icon"
+                />
+                Deploy
+              </a>
+            </div>
+          </div>
+
+          <!-- project2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="icons/img/demo.jpg" alt="" />
+            </div>
+            <h3 class="card-title">Educapp</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+              vitae? Aliquam obcaecati quae doloremque ipsam veniam quos
+              excepturi aperiam distinctio! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Perspiciatis, in?
+            </p>
+            <div class="project-tech">
+              <img
+                src="/icons/svg/tech-icons/react-icon.svg"
+                alt="React icon"
+              />
+              <img src="/icons/svg/tech-icons/node-icon.svg" alt="Node icon" />
+              <img
+                src="/icons/svg/tech-icons/typescript-icon.svg"
+                alt="Typescript icon"
+              />
+              <img src="/icons/svg/tech-icons/html-icon.svg" alt="Html icon" />
+              <img src="/icons/svg/tech-icons/css-icon.svg" alt="Css icon" />
+            </div>
+            <div class="link-section">
+              <a href="#">
+                <img
+                  src="/icons/svg/tech-icons/github-white-icon.svg"
+                  alt="Github icon"
+                  class="icon"
+                />
+                Github
+              </a>
+              <a href="#">
+                <img
+                  src="/icons/svg/tech-icons/web-globe-icon.svg"
+                  alt="Deploy icon"
+                  class="icon"
+                />
+                Deploy
+              </a>
+            </div>
+          </div>
+
+          <!-- project3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="icons/img/demo.jpg" alt="" />
+            </div>
+            <h3 class="card-title">Project 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              voluptates laudantium eius sunt! Sint quas exercitationem,
+              excepturi libero dolor quod architecto error perferendis aut
+              soluta porro nesciunt molestias a repellendus.Ssadf.
+            </p>
+            <div class="project-tech">
+              <img
+                src="/icons/svg/tech-icons/react-icon.svg"
+                alt="React icon"
+              />
+              <img src="/icons/svg/tech-icons/node-icon.svg" alt="Node icon" />
+              <img
+                src="/icons/svg/tech-icons/typescript-icon.svg"
+                alt="Typescript icon"
+              />
+              <img src="/icons/svg/tech-icons/html-icon.svg" alt="Html icon" />
+              <img src="/icons/svg/tech-icons/css-icon.svg" alt="Css icon" />
+            </div>
+
+            <div class="link-section">
+              <a href="#">
+                <img
+                  src="/icons/svg/tech-icons/github-white-icon.svg"
+                  alt="Github icon"
+                  class="icon"
+                />
+                Github
+              </a>
+              <a href="#">
+                <img
+                  src="/icons/svg/tech-icons/web-globe-icon.svg"
+                  alt="Deploy icon"
+                  class="icon"
+                />
+                Deploy
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
 
-    <!-- SKILLS SECTION  -->
+    <!-- ABOUT SECTION  -->
     <div class="horizontal-padding vertical-padding">
-      <section class="skills" id="skills">
-        <h2 class="skills-title">Habilidades</h2>
-
-        <ul class="skills-list">
-          <li class="skills-skill">HTML</li>
-          <li class="skills-skill">CSS</li>
-          <li class="skills-skill">React.JS</li>
-          <li class="skills-skill">Node.JS</li>
-          <li class="skills-skill">JavaScript</li>
-          <li class="skills-skill">TypeScript</li>
-        </ul>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis maxime
-        sunt in minima architecto facere magni sequi fugit molestias nesciunt
-        expedita labore accusamus obcaecati nam, quisquam similique quo eveniet
-        odit impedit eligendi praesentium asperiores explicabo? Voluptas
-        consequatur repellat illo rem deleniti eum veritatis ipsam amet, alias
-        aperiam praesentium. Magni explicabo repellendus autem, possimus,
-        laborum labore molestiae reprehenderit temporibus fuga atque quas! Optio
-        ut velit consectetur maiores nihil, expedita tenetur nesciunt omnis
-        temporibus nemo pariatur ratione voluptas nostrum totam dolores
-        laboriosam iste placeat adipisci veritatis commodi quia, ducimus
-        incidunt! Veritatis saepe ratione totam libero consectetur qui
-        repudiandae ab recusandae asperiores laboriosam nihil nobis quas
-        molestiae, error accusamus fuga quidem voluptatem doloribus consequatur,
-        adipisci expedita. Eum, in. Molestiae quo officia vel, aut quis ab
-        nihil? Quidem dolore vero iusto excepturi soluta incidunt dolor odit
-        culpa tenetur saepe laboriosam id rem praesentium, quis velit officia
-        necessitatibus autem enim modi iste deleniti neque aperiam obcaecati
-        dolorem. Perferendis sequi est a blanditiis autem iure consequatur
-        libero odit saepe officia numquam aut, repudiandae repellat harum
-        tenetur sint incidunt sed soluta ea sapiente ab ratione. Quae
-        necessitatibus iusto, eos esse saepe fugiat dignissimos assumenda hic
-        quis sapiente vel ea odio neque magnam corrupti harum perferendis
-        dolorum deserunt.
+      <section class="about-section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <img src="/icons/img/logo.jpeg" alt="Lucio" class="profile-photo" />
+        <h3 class="profile-name">Lucio Morales</h3>
+        <div class="info-container">
+          <div class="info-box">
+            <h4 class="info-title">Mi historia 📖</h4>
+            <p>
+              A los 8 años recibí mi primera computadora y con ella la
+              posibilidad de conectarme a Internet. Esa
+              <span class="highlight">fascinación</span> que sentí mientras
+              navegaba por las distintas páginas web fue solo el comienzo de mi
+              viaje. Hoy, con 25 años, tengo el privilegio de crear las mismas
+              <span class="highlight">experiencias digitales</span> que
+              entusiasmaron a ese niño.
+            </p>
+          </div>
+          <div class="info-box">
+            <h4 class="info-title">Intereses 😊</h4>
+            <p>
+              Quiero ser un profesional capacitado que genere valor en los
+              proyectos en los que me involucre. El
+              <span class="highlight">esfuerzo</span> y el
+              <span class="highlight">aprendizaje</span> son fundamentales para
+              mí. <br />
+              Soy un optimista; quiero usar la tecnología para mejorar la vida
+              de las personas y dejar mi aporte al mundo.
+            </p>
+          </div>
+        </div>
+        <div class="icons-container">
+          <div class="tech-box">
+            <img
+              src="icons/svg/tech-icons/javascript-icon.svg"
+              alt="JavaScript Icon"
+            />
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-box">
+            <img
+              src="icons/svg/tech-icons/typescript-icon.svg"
+              alt="TypeScript Icon"
+            />
+            <span>Typescript</span>
+          </div>
+          <div class="tech-box">
+            <img
+              src="icons/svg/tech-icons/react-icon.svg"
+              alt="React.js Icon"
+            />
+            <span>React js</span>
+          </div>
+          <div class="tech-box">
+            <img src="icons/svg/tech-icons/node-icon.svg" alt="Node Icon" />
+            <span>Node js</span>
+          </div>
+          <div class="tech-box">
+            <img src="icons/svg/tech-icons/html-icon.svg" alt="HTML5 Icon" />
+            <span>HTML</span>
+          </div>
+          <div class="tech-box">
+            <img src="icons/svg/tech-icons/css-icon.svg" alt="CSS Icon" />
+            <span>CSS</span>
+          </div>
+          <div class="tech-box">
+            <img
+              src="icons/svg/tech-icons/postgresql-icon.svg"
+              alt="PostgreSQL Icon"
+            />
+            <span>PostgreSQL</span>
+          </div>
+        </div>
       </section>
     </div>
 
-    <!-- CONTACT SECTION  -->
-    <div class="horizontal-padding vertical-padding">
+    <!-- CONTACT SECTION 1  -->
+
+    <div class="horizontal-padding vertical-padding"></div>
+
+    <!-- CONTACT SECTION 2  -->
+    <!-- <div class="horizontal-padding vertical-padding">
       <section class="contact" id="contact">
         <h2 class="contact-title">Contacto</h2>
         <div class="contact-details">
@@ -207,7 +350,7 @@
           <button type="submit" class="contact-form-submit">Enviar</button>
         </form>
 
-        <!-- SOCIAL ICONS SECTIONS  -->
+        
         <nav class="social">
           <ul class="social-list">
             <li>
@@ -237,6 +380,6 @@
           </ul>
         </nav>
       </section>
-    </div>
+    </div> -->
   </body>
 </html>
