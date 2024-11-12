@@ -24,6 +24,7 @@
     <script defer src="js/app.js"></script>
   </head>
   <body>
+    <div class="star-background"></div>
     <header class="topheader">
       <nav class="topnav">
         <a href="#" class="logo">
@@ -33,10 +34,6 @@
             src="./icons/img/logo.jpeg"
             alt="imagen del autor"
           />
-          <!-- <div>
-            Lucio Morales <br />
-            { code }
-          </div> -->
         </a>
         <button class="open-menu" aria-label="Abrir menú">
           <img src="./icons/svg/burger-menu.svg" alt="abrir menú" />
@@ -50,27 +47,33 @@
               alt="cerrar menú"
             />
           </button>
-          <li><a href="#profile" class="selected">Inicio</a></li>
+          <li>
+            <a href="#profile" id="inicio-link" class="selected">Inicio</a>
+          </li>
           <li><a href="#projects">Proyectos</a></li>
           <li><a href="#about">Sobre mi</a></li>
-          <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- PROFILE SECTION  -->
-    <div class="horizontal-padding vertical-padding">
-      <section class="profile" id="profile">
+    <!-- PROFILE  -->
+    <section class="profile-background">
+      <div class="sun"></div>
+      <!-- <video autoplay muted loop class="background-video">
+        <source src="/icons/video/space.mp4" type="video/mp4" />
+      </video> -->
+      <div class="profile" id="profile">
         <div class="profile-info">
           <h1 class="profile-title">
             <span class="name-span">L</span>ucio
             <span class="name-span">M</span>orales
           </h1>
           <p class="profile-details">
-            Desarrollador web <span>Frontend</span> con React. <br />
-            Cuento conocimientos en tecnologías de <span>Backend</span>.
-            Desarrollo soluciones completas y robustas que conectan
-            eficientemente el frontend con la lógica del servidor.
+            Desarrollador web <span>Frontend</span> especializado en React.
+            <br />
+            Conocimientos en tecnologías de <span>Backend</span>. Desarrollo
+            soluciones completas y robustas que conectan eficientemente el
+            frontend con la lógica del servidor.
           </p>
           <a href="#projects" class="profile-btn">Ver proyectos</a>
         </div>
@@ -78,13 +81,12 @@
         <div class="profile-img-section">
           <img
             class="profile-img"
-            src="./icons/img/foto-de-perfil.png"
+            src="./icons/img/profile-image.png"
             alt="imagen del autor"
           />
-          <div class="profile-img-line"></div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!-- PROJECTS SECTION  -->
     <div class="horizontal-padding vertical-padding">
