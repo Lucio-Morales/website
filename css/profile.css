@@ -10,30 +10,6 @@
     align-items: center;
   }
   
-  .background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.5;
-    object-fit: cover;
-  }
-  
-  .profile-background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); 
-    z-index: 0;
-  }
   
   .profile {
     text-align: center;
@@ -51,7 +27,6 @@
     font-weight: bold;
     margin: 0;
     color: #ffddcc;
-    /* font-family: 'Noto Sans', sans-serif; */
   }
   
   .name-span {
@@ -75,30 +50,24 @@
   
   .profile-btn {
     text-transform: uppercase;
-    background-color: rgba(255, 139, 119, 0.9); /* Color más intenso */
-    color: white;
+    background-color:tomato;
+    color: #ffddcc;;
     border: none;
-    font-size: 1.1rem; /* Fuente ligeramente más grande */
-    padding: 0.6em 1.3em; /* Aumento de tamaño para hacerlo más prominente */
-    border-radius: 12px; /* Bordes más redondeados */
+    font-size: 1.1rem; 
+    padding: 0.6em 1.3em; 
+    border-radius: 12px;
     cursor: pointer;
-    font-weight: 600; /* Negrita para mayor impacto */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
-    transition: all 0.3s ease; /* Transición suave */
+    font-weight: 600; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Efecto al pasar el cursor */
+
 .profile-btn:hover {
-    background-color: rgba(255, 139, 119, 1); /* Hacer el color más fuerte al hover */
-    transform: scale(1.05); /* Aumento del tamaño para darle más énfasis */
-    box-shadow: 0 0 15px rgba(255, 139, 119, 0.8), 0 0 30px rgba(255, 139, 119, 0.5); /* Sombra de resplandor */
+    background-color: rgb(202, 54, 28);
+    /* transform: scale(2);     */
 }
 
-/* Efecto de foco para accesibilidad */
-.profile-btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(255, 139, 119, 0.6); /* Resalta el borde cuando está enfocado */
-}
+
 
 
   

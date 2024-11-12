@@ -77,12 +77,11 @@ for (let i = 0; i < numberOfStars; i++) {
   const star = document.createElement('div');
   star.classList.add('star');
 
-  // Posición aleatoria para cada estrella
-  star.style.width = `${Math.random() * 3}px`; // Tamaño aleatorio
+  star.style.width = `${Math.random() * 3}px`;
   star.style.height = star.style.width;
   star.style.top = `${Math.random() * 100}vh`;
   star.style.left = `${Math.random() * 100}vw`;
-  star.style.animationDelay = `${Math.random() * 2}s`; // Retraso aleatorio
+  star.style.animationDelay = `${Math.random() * 2}s`;
 
   starContainer.appendChild(star);
 }

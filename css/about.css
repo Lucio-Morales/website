@@ -23,12 +23,17 @@
   }
   
   .profile-name {
+    color: #ffddcc;
     font-size: 2.5rem;
     border-bottom: 3px solid #1a1a1a;
     font-weight: 500;
     margin: 20px 0 10px;
   }
-  
+
+   .profile-name span {
+    color: tomato;
+  }
+
   .section-title {
     font-size: 30px;
     font-weight: bold;
